@@ -1,6 +1,6 @@
 # <p align="center">Object Oriented Programming (OOPs)</p>
 
-## What is Object Oriented Programming?
+## Introduction to Object Oriented Programming (OOPs)
 
 OOPs is a programming paradigm based on the concept of "classes" and "objects". A class is a blueprint for creating objects. An object is an instance of a class, i.e., it's an identifiable entity with some characteristics (attributes) and behavior (functions). The diagram below shows the relation between class, objects, functions and attributes using the example of a human being:-
 
@@ -86,7 +86,7 @@ Inheritance in Java is a mechanism in which one object acquires all the properti
     In the above code snippet, the parent class Employee has the attributes - `salary` and `bonus`. A subclass `Programmer` inherits the properties of the parent class `Employee` via `extends` keyword. It allows us to skip re-writing the attributes for the `Programmer` class and enables code reusability.
     JAVA supports 3 types of inheritance - single (Class A <- Class B), multilevel (Class A <- Class B <- Class C) and heirarchical (Class A <- Class B, Class A <- Class C).
 
-3. **Encapsulation:** Encapsulation in Java is a process of wrapping code and data together into a single unit. A fully encapsulated class in JAVA hides it's data from other classes using the data hiding concept which can be achieved by setting all data members of a class `private`. Setter and Getter methods can allow us to enter and receive the data respectively.
+3. **Encapsulation:** <br> Encapsulation in Java is a process of wrapping code and data together into a single unit. A fully encapsulated class in JAVA hides it's data from other classes using the data hiding concept which can be achieved by setting all data members of a class `private`. Setter and Getter methods can allow us to enter and receive the data respectively.
 
     ```java
     public class Student{  
@@ -102,9 +102,9 @@ Inheritance in Java is a mechanism in which one object acquires all the properti
     
     As per above code snippet, the setter and getter methods, `getName()` and `setName()` allow us to enter data into, as well as receive it from, a private variable `name`.
 
-4. **Polymorphism:** In OOPs, Polymorphism is the concept that refers to the ability of a variable, function or object to take on multiple forms. To better understand polymorphism, we can take the real world example of a man who can be a husband, a father, a brother or an employee, and exhibits different behavior while serving different roles. Similarily, in OOPs, polymorphism allows us to define a single interface and have multiple implementations of the same. In JAVA, polymorphism is divided into 2 types:
+4. **Polymorphism:** <br> In OOPs, Polymorphism is the concept that refers to the ability of a variable, function or object to take on multiple forms. To better understand polymorphism, we can take the real world example of a man who can be a husband, a father, a brother or an employee, and exhibits different behavior while serving different roles. Similarily, in OOPs, polymorphism allows us to define a single interface and have multiple implementations of the same. In JAVA, polymorphism is divided into 2 types:
 
-    * Compile-Time Polymorphism:
+    * **Compile-Time Polymorphism:**
     It is also known as static polymorphism. This type of polymorphism is achieved by function overloading or operator overloading. 
 
       ```java
@@ -126,7 +126,7 @@ Inheritance in Java is a mechanism in which one object acquires all the properti
 
       As per the above code snippet, the function `Multiply()` serves 2 different functions of either multiplying 2 variables or 3 variables via function overloading. Hence, polymorphism is achieved.
 
-    * Runtime Polymorphism:
+    * **Runtime Polymorphism:**
     It is also known as Dynamic Method Dispatch. It is a process in which a function call to the overridden method is resolved at Runtime. This type of polymorphism is achieved by Method Overriding. Method overriding, on the other hand, occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.
 
       ```java
@@ -164,8 +164,7 @@ Suppose that in addition to a Car object, a RaceCar and a Limousine objects are 
 
 ### 3. Flexibility through Polymorphism
 
-As per the above example, say we need functions, like `driveCar()`, `driveRaceCar()` and `DriveLimousine()`. RaceCarDrivers share some traits with LimousineDrivers, but other things, like RaceHelmets and BeverageSponsorships, are unique.
-
+As per the above example, say we need functions, like `driveCar()`, `driveRaceCar()` and `DriveLimousine()`. RaceCarDrivers share some traits with LimousineDrivers, but other things, like RaceHelmets and BeverageSponsorships, are unique. <br>
 This is where object-oriented programming’s polymorphism comes into play. Because a single function can shape-shift to adapt to whichever class it’s in, we can create one function in the parent Car class called `drive()`, and save time by not creating separate functions for each car type. This function would work with the RaceCarDriver, LimousineDriver and so on.
 
 ### 4. Effective Problem Solving
@@ -174,8 +173,8 @@ Object-oriented programming enables us to take a huge problem and break it down 
 
 ## Resources
 
-https://buggyprogrammer.com/what-is-the-object-oriented-programming-2021/ <br>
-https://en.wikipedia.org/wiki/Object-oriented_programming <br>
-https://www.javatpoint.com/java-oops-concepts <br>
-https://www.geeksforgeeks.org/polymorphism-in-java/<br>
-https://www.w3schools.com/java/java_oop.asp<br>
+- [BuggyProgrammer - OOPs](https://buggyprogrammer.com/what-is-the-object-oriented-programming-2021/) <br>
+- [Wikipedia - OOPs](https://en.wikipedia.org/wiki/Object-oriented_programming) <br>
+- [JavaTPoint - Java OOPs Concepts](https://www.javatpoint.com/java-oops-concepts) <br>
+- [GeeksForGeeks - Polymorphism in Java](https://www.geeksforgeeks.org/polymorphism-in-java/)<br>
+- [W3Schools - Java OOPs](https://www.w3schools.com/java/java_oop.asp)<br>
